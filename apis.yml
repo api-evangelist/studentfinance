@@ -1,7 +1,23 @@
 aid: studentfinance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/studentfinance.png
 name: StudentFinance
-description: StudentFinance is a company surfaced as a portfolio company of seedcamp and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: StudentFinance is a European fintech company, backed by Seedcamp, focused
+  on financing access to education and career development (income-share and deferred-payment
+  models for students and upskilling programs). Surfaced as a Seedcamp portfolio company
+  and added to the API Evangelist network, its public presence is currently a minimal
+  Webflow marketing site; an enrichment pass found no public API, developer portal,
+  documentation, SDKs, or /.well-known discovery surface.
 url: https://raw.githubusercontent.com/api-evangelist/studentfinance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Education
+- Financing
+- Students
+- Startups
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/studentfinance-domain-security.yml
 - type: Website
-  url: http://studentfinance.com
+  url: https://www.studentfinance.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
